@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0rem;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+span {
+    background-color: rgb(216, 27, 27);
+    text-align: center;
+    padding: 0.5rem 0rem;
+    border-radius: 1rem;
+}
+
+.conteiner {
+    margin: 2rem 25rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 4rem 1fr;
+}
+
+.visor {
+    border: 0.2rem solid #c9c2c2;
+    background-color: #ffffff;
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.teclado {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    gap: 0.5rem;
+}
+
+/* .digito {
+    padding: 0.5rem 0rem;
+    border-radius: 1rem;
+}
+
+.sinal {
+    padding: 0.5rem 0rem;
+} */

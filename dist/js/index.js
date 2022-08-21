@@ -1,10 +1,10 @@
 "use strict";
 const visor = document.querySelector(".visor");
 let operadores = [];
-function addElement(element) {
+const addElement = (element) => {
     operadores.push(element);
     visor.innerHTML += `${element}`;
-}
+};
 const limpaElemento = () => {
     visor.innerHTML = "";
     operadores.pop();

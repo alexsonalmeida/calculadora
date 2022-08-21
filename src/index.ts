@@ -1,9 +1,9 @@
 const visor = document.querySelector(".visor") as HTMLBodyElement
 let operadores:string[] = []
 
-function addElement(element: string) {
+const addElement = (element: string) => {
     operadores.push(element)
-    visor.innerHTML += `${element}`
+    visor.innerHTML += `${element}`    
 }
 
 const limpaElemento = () => {

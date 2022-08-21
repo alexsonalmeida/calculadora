@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" onload="verificaCampo()">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,24 +13,25 @@
             <section class="visor">
             </section>
             <section class="teclado">
-                <span class="digito">1</span>
-                <span class="digito">2</span>
-                <span class="digito">3</span>
-                <span class="digito">4</span>
-                <span class="digito">5</span>
-                <span class="digito">6</span>
-                <span class="digito">7</span>
-                <span class="digito">8</span>
-                <span class="digito">9</span>
-                <span class="digito">0</span>
-                <span class="sinal">+</span>
-                <span class="sinal">-</span>
-                <span class="sinal">x</span>
-                <span class="sinal">/</span>
-                <span>(</span>
-                <span>)</span>
-                <span>C</span>
-                <span>=</span>                
+                <span class="digito" onclick="addElement(1)">1</span>
+                <span class="digito" onclick="addElement(2)">2</span>
+                <span class="digito" onclick="addElement(3)">3</span>
+                <span class="digito" onclick="addElement(4)">4</span>
+                <span class="digito" onclick="addElement(5)">5</span>
+                <span class="digito" onclick="addElement(6)">6</span>
+                <span class="digito" onclick="addElement(7)">7</span>
+                <span class="digito" onclick="addElement(8)">8</span>
+                <span class="digito" onclick="addElement(9)">9</span>
+                <span class="digito" onclick="addElement(0)">0</span>
+                <span class="sinal" onclick="addElement('+')">+</span>
+                <span class="sinal" onclick="addElement('-')">-</span>
+                <span class="sinal" onclick="addElement('x')">x</span>
+                <span class="sinal" onclick="addElement('/')">/</span>
+                <span onclick="addElement('(')">(</span>
+                <span onclick="addElement(')')">)</span>
+                <span class="arrow" onclick="limpaElemento()">🠔</span>
+                <span class="limpar" onclick="limpaVisor()">C</span>
+                <span class="igual">=</span>                
             </section>
         </article>
     </main>

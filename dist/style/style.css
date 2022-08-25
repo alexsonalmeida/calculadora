@@ -86,3 +86,38 @@ span:hover {
 .igual:hover {
     background-color: #0191da;
 }
+
+@media (max-width: 400px) {
+    span {
+        font-size: 1rem; 
+        padding: 0.5rem 2rem;       
+    }
+
+    .conteiner {
+        padding: 0.6rem;
+        margin: 1.5rem;
+    }
+
+    .visor {
+        height: 2rem;
+        padding: 0.25rem;
+        font-size: 1rem;
+        border: 0.15rem solid #100B00;
+    }
+
+    .teclado {
+        gap: 0.4rem;
+        margin: 0rem 0.75rem;
+    }
+
+    .arrow {
+        font-size: 1.2rem;
+        padding: 0.25rem 1.5rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .conteiner {
+        margin: 0rem;
+    }
+}

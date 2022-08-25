@@ -1,32 +1,35 @@
-const visor = document.querySelector(".visor") as HTMLBodyElement
-let operadores:string[] = []
+const visor = document.querySelector(".visor") as HTMLBodyElement 
+let operators:string[] = []
 
 const addElement = (element: string) => {
-    operadores.push(element)
-    if (element === "*") visor.innerHTML += "x"   
-    else visor.innerHTML += `${element}`    
+    operators.push(element)
+    element === "*" ? visor.innerHTML += "x" : visor.innerHTML += `${element}` 
 }
 
 const realizarCalculo = () => {
     let operacao = ""
 
-    for (let element of operadores) {
+    for (let element of operators) {
         operacao += element
     }
-    
-    visor.innerHTML = eval(operacao)
+
+    let res = eval(operacao)
+
+    visor.innerHTML = res
+    operators = []
+    operators.push(res)
 }
 
 const limpaElemento = () => {
     visor.innerHTML = ""
-    operadores.pop()
+    operators.pop()
     
-    for (let op of operadores) {
+    for (let op of operators) {
       visor.innerHTML += `${op}`  
     }
 }
 
 const limpaVisor = () => {
     visor.innerHTML = ""
-    operadores = []
+    operators = []
 }
